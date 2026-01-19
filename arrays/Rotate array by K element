@@ -1,0 +1,28 @@
+//189 Rotate array by K element
+
+public class RotateArrayByK{
+public void reverse(int nums[],int start,int end){
+    while(start<end){
+      int temp = nums[start];
+      nums[start]=nums[end];
+      nums[end]=temp;
+      i++;
+      j--;
+    }
+}
+
+public void rotate(int [] nums,int k){
+  int n = nums.length;
+//if the size of k is greater than n
+  k = k%n;
+
+  //Reverse the whole array
+  reverese(nums,0,n-1);
+  //Reverse the first k-1 element
+  reverese(nums,0,k-1);
+  //reverse the remaining n-k elements
+  reverse(nums,k,n-1);
+  
+}
+  
+  }
