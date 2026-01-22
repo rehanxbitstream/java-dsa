@@ -1,0 +1,14 @@
+//136 Find the number that appears once
+
+public class SingleNumber{
+public int getSingleNumber(int[] arr){
+int xor = 0;
+
+for(int i:arr){
+xor^=arr;
+}
+
+return xor;
+}
+
+}
