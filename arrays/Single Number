@@ -3,7 +3,7 @@
 public class SingleNumber{
 public int getSingleNumber(int[] arr){
 int xor = 0;
-
+//Traversing each element of array
 for(int i:arr){
 xor^=arr;
 }
