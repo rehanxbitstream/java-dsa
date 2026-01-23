@@ -1,4 +1,5 @@
 //1. Check if a pair with given sum exists in Array
+
 import java.util.HashMap;
 
 public class TwoSum{
