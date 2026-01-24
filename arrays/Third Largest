@@ -1,0 +1,27 @@
+// Find third largest element
+public class ThirdLargest{
+
+public int findThirdLargest(int[] arr){
+
+int largest = Integer.MIN_VALUE;
+int secondLargest = Integer.MIN_VALUE;
+int thirdLargest = Integer.MIN_VALUE;
+for(int i=0;i<arr.length;i++){
+
+if(arr[i]>largest){
+thirdLargest = secondLargest;
+secondLargest = largest;
+largest = arr[i];
+}
+else if(arr[i]>secondLargest){
+thirdLargest = secondLargest;
+secondLargest = arr[i];
+}
+else if(arr[i]>thirdLargest){
+thirdLargest = arr[i];
+}
+return thirdLargest;
+
+
+}
+}
