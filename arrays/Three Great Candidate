@@ -2,6 +2,7 @@
 
 public class ThreeGreatCandidate{
 public int findMaxProduct(int[]arr){
+
 int maxA = Integer.MAX_VALUE;
 int maxB = Integer.MAX_VALUE;
 int maxC = Integer.MAX_VALUE;
