@@ -1,0 +1,36 @@
+//628. Maximum prouct of three numbers
+
+public class ThreeGreatCandidate{
+public int findMaxProduct(int[]arr){
+int maxA = Integer.MAX_VALUE;
+int maxB = Integer.MAX_VALUE;
+int maxC = Integer.MAX_VALUE;
+int minA = Integer.MIN_VALUE;
+int minB = Integer.MIN_VALUE;
+
+for(int i=0;i<arr.length;i++){
+if(arr[i]>maxA){
+maxC = maxB;
+maxB = maxA;
+maxA = arr[i];
+}
+else if (arr[i]>maxB){
+maxC = maxB;
+maxB = arr[i];
+}
+else if(arr[i]>maxC){
+maxC = arr[i];
+}
+
+if(arr[i]<minA){
+minB = minA;
+minA = arr[i];
+}
+else if(arr[i]<minB){
+minB = arr[i];
+}
+}
+return Math.max(minA*minB*maxA,maxA*maxB*maxC);
+
+}
+}
