@@ -1,0 +1,25 @@
+// Maximum Consective ones 
+public class MaximumCOnsecutiveOnes{
+
+public int findMaxConsecutiveOne(int[] arr){
+
+int cnt = 0;
+int maxCount = 0;
+
+for(int i:arr){
+if(arr[i]==1){
+count++;
+}
+else{
+
+count =0;
+}
+maxCount = Math.max(maxCount,count);
+}
+return maxCount;
+
+}
+
+
+
+}
