@@ -1,4 +1,4 @@
-// Maximum Consective ones 
+//485. Maximum Consective ones 
 public class MaximumCOnsecutiveOnes{
 
 public int findMaxConsecutiveOne(int[] arr){
