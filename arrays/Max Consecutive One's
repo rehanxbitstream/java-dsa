@@ -10,16 +10,14 @@ for(int i:arr){
 if(arr[i]==1){
 count++;
 }
-else{
 
+else{
 count =0;
 }
+
 maxCount = Math.max(maxCount,count);
 }
 return maxCount;
-
+}
 }
 
-
-
-}
