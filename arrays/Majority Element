@@ -22,7 +22,19 @@ count--;
 }
 
 }
+
+// Verify the element
+for(int i=0;i<n;i++){
+if(e1 == arr[i]){
+count2++;
 }
 
+
+}
+if(count2>(n/2)){
+return e1;
+}
+
+return -1;
 }
 }
